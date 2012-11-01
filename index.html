@@ -1,0 +1,364 @@
+<html lang="en">
+    <head>
+        <style>
+            body{
+                width:1024px;
+                font-size: 30px;
+                font-family: 'Armata', sans-serif;
+				background: url(images/pt-2.png);
+				color: #eee;
+				text-shadow: 1px 1px 2px #000;
+            }
+
+            #start{
+                text-align:center;
+                width:1024px;
+            }
+            #definition{
+                text-align:center;
+                width:1024px;
+            }
+            #confusing1{
+                #text-align:center;
+                width:300px;
+            }
+            #confusing2{
+                #text-align:center;
+                width:300px;
+            }
+            #clipchip{
+                text-align:center;
+                width:1024px;
+            }
+            #clipsequecing{
+                text-align:center;
+                width:1024px;
+            }
+			#pipeline{
+				text-align:center;
+				width:1024px;
+            }
+            #why{
+				width:1024px;
+				text-align:center;
+			}
+			#goal{
+				width:1024px;
+			}
+			#what{
+				width:1024px;
+				text-align:center;
+			}
+			#position{
+				width:1024px;
+				#text-align:center;
+			}
+			#recuit{
+				width:1024px:
+			}
+			#update{
+				width:1024px;
+				text-align:center;
+			}
+			#iclip{
+				width:1024px;
+				text-align:center;
+			}
+			#iclipv{
+				width:1024px;
+				text-align:center;
+			}
+			#iclipoverview{
+				width:1024px;
+				text-align:center;
+			}
+			#iclipcompare{
+				width:1024px;
+			}
+			#parclip{
+				width:1024px;
+				text-align:center;
+			}
+			#parclipv{
+				width:1024px;
+				text-align:center;
+			}
+			#parclipcomare{
+				width:1024px;
+			}
+			#summary{
+				width:1024px;
+			}
+			#thanks{
+				width:1024px;
+				text-align:center;
+			}
+         
+            
+            
+            .step{
+                #text-align:center;
+                width:1024px;
+				margin:0 auto;
+	
+				-moz-transition:1s opacity;
+				-webkit-transition:1s opacity;
+				transition:1s opacity;
+            }
+
+
+
+			img{
+				float:center;
+			}
+			.author_text{
+				margin-top:80px;
+				font-size:20px
+			}
+
+            .hint_text{
+				margin-top: 120px;
+                font-size:30px;
+                background-color:#282a2f;
+                padding:15px;
+				border: 1px solid #484d52;
+				border-radius: 5px;
+				font-size: 18px;
+				
+            }
+
+			h1 {
+				font-size: 150%;
+				font-weight: bold;
+			}
+			h2 {
+				font-size:110%;
+				font-weight:bold;
+				text-align:left;
+			}
+			.refs{
+				width:100%;
+				background-color:#282a2f;
+				padding:6px;
+				border:1px solid #484d52;
+				border-radius:5px;
+				font-size: 10px;
+				text-align:right;
+				font-style:italic;
+			}
+            .fallback-message {
+               	color: #eee;
+                line-height: 1.3;
+                width: 780px;
+                padding: 10px 10px 0;
+                margin: 20px auto;
+                border: 1px solid #E4C652;
+                border-radius: 10px;
+            }
+            .fallback-message p {
+                margin-bottom: 10px;
+            }
+            .impress-supported .fallback-message {
+                display: none;
+            }
+			em{
+				font-style: normal;
+				padding-bottom: 2px;
+				color: ff00ff;
+			}
+			a[href^="mailto"]{color: ff00ff;}
+			a:link {color:ff00ff;}
+			
+			a:visited{color:800080;}
+			a:hover {color:5f8dd3;}
+        </style>
+    </head>
+    <body class="impress-not-supported">
+
+
+
+        <div id="impress">
+			<div id="start" class="step" >
+				<h1>Directly Identify RNA-RBP Interactions in Genome-wide Scale</h1>
+                <p>Fast Introduction to HITS-CLIP (or CLIP-seq)</p>
+				<p class='author_text'><a href="mailto:yanyun@whu.edu.cn">Yun YAN</a></p>
+                <p class='hint_text'>Press <em>Spacebar</em> or Tab To Get Started</p>
+			</div>
+
+            <div id="definition" class="step" data-x="2000">
+				<h1>HITS-CLIP (or CLIP-seq)</h1>
+				<p><em>HIT</em>hroughput <em>S</em>equencing of RNAs isolated by <em>C</em>ross<em>L</em>inking <em>I</em>mmuno<em>P</em>recipitation</p>
+            </div>
+
+            <div id="confusing1" class="step" data-x = "2000" data-y="-1000" data-scale="0.5" data-z="500">
+                <p>Long Definition</p>	
+                <p>boring, huh?!</p>
+            </div>
+            <div id="confusing2" class="step" data-x= "2600" data-y="-1000" data-scale="0.25" data-z="0">
+                <p>Well, for Short</p>	
+            </div>
+            <div id="clipchip" class="step" data-x = "4000"  >
+                <h1>CLIP-Seq = Chip-Seq</h1>
+                <p>but RNA version :-P</p>	
+            </div>
+            
+            <div id="clipsequecing" class="step" data-x= "4000" data-y="1500">
+				<h1>CLIP-seq = CLIP + Sequencing</h1>
+            </div>
+            
+            <div id="pipeline" class="step" data-x="6000" data-y="0">
+				<h2>Standard CLIP-seq Pipeline</h2>
+				<p><img src="images/CLIP-pipeline.jpg" height="580"></p>
+				<p>UV-Crosslink >> IP >> Purify >> Sequencing</p>
+				<p class="refs">An RNA code for the FOX2 splicing regulator revealed by mapping RNA-protein interactions in stem cells. NSMB. 2009</p>
+            </div>
+			
+			<div id="why" class="step" data-x="8000" >
+				<h1>Why CLIP?</h1>
+			</div>
+			
+			<div id="goal" class="step" data-x="8000" data-y="1500">
+				<h2>Identify candidate target RNA</h2>
+				<ul>
+				<li><p>RIP-Chip, indirect or non-phisiological interactions</p></li>
+				<li><p>UV-Crosslink and IP, Direct interactions</p></li>
+				</ul>
+			</div>
+			
+			<div id="what" class="step" data-x="10000">
+				<h1>What Will <em>CLIP-seq</em> Data Offer? </h1>
+			</div>
+			
+			<div id="position" class="step" data-x="10000" data-y="3000">
+				<h2>Precise Binding Position</h2>
+				<p>Besides candidate target RNA motif</p>
+				<p><img src="images/candidate-motif.jpg"></p>
+				<p class="refs">Robert B. Darnell, etc. CLIP identifies Nova-Regulated RNA networks in the brain. Science. 2003.</p>
+			</div>
+			
+			<div id="recuit" class="step" data-x="10000" data-y="4500">
+				<h2>Proteins Potentially recuited to machinery</h2>
+				
+				<p><img src="images/potentially_recuited_to_machinery.jpg" width="600"></p>
+				
+				<p><em>Tag detected</em> + <em>Significant difference between Ctrl/Knock-out</em>: </p>
+				
+				<p>It is indicated that NOVA is <em>recuited</em> to influence splicing. </p>
+				
+				<p class="refs">Robert B. Darnell, etc. CLIP identifies Nova-Regulated RNA networks in the brain. Science. 2003. </p>			
+			</div>
+			
+			<div id="update" class="step" data-x="12000" data-y="0">
+				<h1>CLIP Update</h1>
+				<br />
+				<br />
+				<p>iCLIP</p>
+				<p>PAR-CLIP</p>
+				
+			</div>
+			
+			
+			<div id="iclip" class="step" data-x="12000" data-y="1500">
+<h1><em>i</em>ndividual-nucleotide resolution CLIP</h1>
+			</div>
+			
+			
+			<div id="iclipv" class="step" data-x="14000" data-y="1500">
+				<video width="800" controls="controls">
+				    <source src="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3169244/bin/jove-50-2638.mov" type="video/mp4">
+				    Your Browser Does not support Html5, please update your browser. 
+				</video>
+				
+				<br />
+				<p class="refs">iCLIP - Transcriptome-wide Mapping of Protein-RNA Interactions with Individual Nucleotide Resolution. J Vis Exp. 2011. </p>
+			</div>
+			
+			
+			<div id="iclipoverview" class="step" data-x="16000" data-y="1500">
+				<p><img src="images/iCLIP_pipeline.jpg" height = "700"></p>
+			</div>
+			
+			
+			<div id="iclipcompare" class="step" data-x="18000" data-y="1500">
+				<h2>Classic CLIP:</h2>
+				
+				<ul>
+				<li>cDNAs truncate prematurely at the crosslinked nucleotide</li>
+				<li>Truncated cDNAs are lost during the standard CLIP library preparation protocol</li>
+				</ul>
+				
+				<h2>iCLIP:</h2>
+				
+				<p>More efficient intramolecular cDNA circularization instead of intermolecular RNA ligation to capture truncated cDNAs</p>
+			</div>
+			
+			
+			<div id="parclip" class="step" data-x="12000" data-y="3000">
+<h1><em>P</em>hoto<em>a</em>ctivatable-<em>R</em>ibonucleoside-Enhanced CLIP</h1>
+			</div>
+
+			<div id="parclipv" class="step" data-x="14000" data-y="3000">
+				<video width="800" controls="controls">
+				    <source src="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3156069/bin/jove-41-2034.mp4" type="video/mp4">
+				    Your Browser Does not support Html5, please update your browser.
+				</video>
+				
+				<br />
+				<p class="refs">PAR-CliP - A Method to Identify Transcriptome-wide the Binding Sites of RNA Binding Proteins, J Vis Exp. 2010.</p>
+			</div>
+			
+			
+			<div id="parclipcomare" class="step" data-x="16000" data-y="3000">
+				<h2>Classic CLIP:</h2>
+				
+				<ul>
+				<li>Low efficiency of UV 254 nm RNA-protein crosslinking</li>
+				<li>Difficult to separate UV-crosslinked target RNA segments from background non-crosslinked RNA fragments also present in the sample</li>
+				</ul>
+				
+				<h2>PAR-CLIP:</h2>
+				
+				<p>Rely on 4-thiouridine (<em>4-SU</em>) or 6-thioguanosine (<em>6-SG</em>)</p>
+				
+				<ul>
+				<li>UV 365 nm induces efficient crosslinking of photoreactive nucleoside-labeled cellular RNAs to interacting RBPs</li>
+				<li>4-SU: T->C transitions</li>
+				<li>6-SG: G->A mutations. The presense of the changes can be assessed during bioinformatic analysis, and make it possible to seperate them from the background of sequences derived from abundant cellular RNAs.</li>
+				</ul>
+			</div>
+			
+			<div id="summary" class="step" data-x="-2000" data-y="0">
+				<h1>Summary</h1>
+				
+				<ul>
+				<li>HITS-CLIP (or CLIP-seq)</li>
+				<li>Exact binding position</li>
+				<li>Direct interaction, candiate target RNA</li>
+				<li>iCLIP and PAR-CLIP</li>
+				</ul>
+			</div>
+			
+			<div id="thanks" class="step" data-x="-2000" data-y="1500">
+				<p><img src="images/logo-bonnie-basepairing.jpg"></p>
+				
+				<p>Check source code at: <a href="https://github.com/Puriney/clipseq">https://github.com/Puriney/clipseq</a></p>
+			</div>
+
+
+        </div>
+
+        <div class="fallback-message">
+            <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+            <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+        </div>
+
+
+        <script type="text/javascript" src="js/impress.js"></script>
+        <script type="text/javascript">impress().init();</script>
+
+
+
+    </body>
+</html>
+
+
