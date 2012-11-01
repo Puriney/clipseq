@@ -3,7 +3,7 @@ CLIP-seq
 
 Quick introduction to HITS-CLIP (or CLIP-seq).
 
-Check my presentation (through [Impress.js](https://github.com/bartaz/impress.js/) at: [http://puriney.github.com/clipseq](http://puriney.github.com/clipseq).  
+Check my presentation (through [Impress.js](https://github.com/bartaz/impress.js/)) at: [http://puriney.github.com/clipseq](http://puriney.github.com/clipseq).  
 
 Check my source code at: [https://github.com/Puriney/clipseq](https://github.com/Puriney/clipseq). 
 
